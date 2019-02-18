@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+:08:00"))
+}
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation files('libs/alipaySdk-20180601.jar')
+    implementation files('libs/open_sdk_r6019_lite.jar')
+}
+//=======生成jar包脚本 begin=============================================
+task jarMyLib(type: Jar, dependsOn: ['build']) {
+    archiveName = 'longda-1.0.jar'// 打出的jar包名字
+    from('build/intermediates/classes/release')
+    destinationDir = file('build/libs')
+    exclude 'com/yuan/shi/lonng/BuildConfig.class'
+    exclude '**/R.class'
+    exclude '**/R\$*.class'
+    //只导入资源路径集下的部分资源
+    include 'com/yuan/shi/lonng/**/*.class'
+}
+
+task proguardMyLib(type: proguard.gradle.ProGuardTask, dependsOn: ['jarMyLib']) {
+    injars('build/libs/longda-1.0.jar')
+    outjars('build/libs/longda-' + releaseTime() + '.jar')// 输出的jar包位置和名字
+
+    configuration 'proguard-rules.pro'// 配置过的混淆文件
+}
+//=======生成jar包脚本 end=============================================

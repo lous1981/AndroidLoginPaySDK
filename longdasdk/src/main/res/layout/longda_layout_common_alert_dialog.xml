@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/longda_bg">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/longda_common_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/longda_margin_10"
+        android:textStyle="bold"
+        android:text="@string/longda_common_alert_dialog_title"
+        android:textSize="@dimen/longda_text_size_20"
+        />
+
+    <View
+        android:layout_below="@+id/longda_common_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/longda_divid_line_h"
+        android:background="@color/longda_color_value_4_1"/>
+
+    <Button
+        android:layout_marginTop="@dimen/longda_margin_5"
+        android:layout_below="@+id/longda_common_dialog_title"
+        android:id="@+id/longda_btn_dialog_confirm_pay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/longda_height_45"
+        android:background="@drawable/longda_bg"
+        android:gravity="center"
+        android:text="@string/longda_common_alert_dialog_ok"
+        android:textColor="@color/longda_color_value_8"
+        android:textSize="@dimen/longda_text_size_18"/>
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/longda_btn_dialog_confirm_pay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/longda_divid_line_h"
+        android:background="@color/longda_color_value_4_1"/>
+    <Button
+        android:layout_marginBottom="@dimen/longda_margin_20"
+        android:layout_marginTop="@dimen/longda_margin_5"
+        android:layout_below="@+id/longda_btn_dialog_confirm_pay"
+        android:id="@+id/longda_btn_dialog_repay"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/longda_height_45"
+        android:background="@drawable/longda_bg"
+        android:gravity="center"
+        android:text="@string/longda_common_alert_dialog_no"
+        android:textColor="@color/longda_color_value_7_2"
+        android:textSize="@dimen/longda_text_size_18"/>
+
+</RelativeLayout>

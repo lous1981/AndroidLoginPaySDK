@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="longda_color_value_1">#ffffff</color>
+    <color name="longda_color_title_btn">#93e5ff</color>
+    <color name="longda_color_value_2">#f5f5f9</color>
+    <color name="longda_color_value_2_0">#fafafc</color>
+    <color name="longda_color_value_2_1">#fafafc</color>
+    <color name="longda_color_value_3">#e5e5e5</color>
+    <color name="longda_color_value_4">#a4a4a4</color>
+    <color name="longda_color_value_4_1">#b9b9b9</color>
+    <color name="longda_color_value_5">#767676</color>
+    <color name="longda_color_value_6">#000000</color>
+    <color name="longda_color_value_7">#0bbcf4</color>
+    <color name="longda_color_value_7_1">#07ade1</color>
+    <color name="longda_color_value_7_2">#00c2ff</color>
+    <color name="longda_color_value_7_6">#709ac4</color>
+    <color name="longda_color_value_8">#eb5353</color>
+    <color name="longda_transparent_75">#bf000000</color>
+    <color name="longda_color_value_line_height_2">#d9d9d9</color>
+    <color name="longda_color_value_line_height_1">#e6e6e6</color>
+    <color name="longda_transparent">#00000000</color>
+
+    <dimen name="longda_divid_line_h">0.5dp</dimen>
+    <dimen name="longda_height_34">34dp</dimen>
+    <dimen name="longda_height_37">37dp</dimen>
+    <dimen name="longda_height_38">38dp</dimen>
+    <dimen name="longda_height_40">40dp</dimen>
+    <dimen name="longda_height_44">44dp</dimen>
+    <dimen name="longda_height_45">45dp</dimen>
+    <dimen name="longda_height_48">48dp</dimen>
+    <dimen name="longda_height_50">50dp</dimen>
+    <dimen name="longda_height_60">60dp</dimen>
+    <dimen name="longda_height_70">70dp</dimen>
+    <dimen name="longda_height_80">80dp</dimen>
+    <dimen name="longda_height_95">95dp</dimen>
+    <dimen name="longda_margin_10">10dp</dimen>
+    <dimen name="longda_margin_11">11dp</dimen>
+    <dimen name="longda_margin_12">12dp</dimen>
+    <dimen name="longda_margin_13">13dp</dimen>
+    <dimen name="longda_margin_15">15dp</dimen>
+    <dimen name="longda_margin_16">16dp</dimen>
+    <dimen name="longda_margin_17">17dp</dimen>
+    <dimen name="longda_margin_18">18dp</dimen>
+    <dimen name="longda_margin_19">19dp</dimen>
+    <dimen name="longda_margin_20">20dp</dimen>
+    <dimen name="longda_margin_22">22dp</dimen>
+    <dimen name="longda_margin_25">25dp</dimen>
+    <dimen name="longda_margin_26">26dp</dimen>
+    <dimen name="longda_margin_27">27dp</dimen>
+    <dimen name="longda_margin_28">28dp</dimen>
+    <dimen name="longda_margin_3">3dp</dimen>
+    <dimen name="longda_margin_30">30dp</dimen>
+    <dimen name="longda_margin_32">32dp</dimen>
+    <dimen name="longda_margin_35">35dp</dimen>
+    <dimen name="longda_margin_4">4dp</dimen>
+    <dimen name="longda_margin_40">40dp</dimen>
+    <dimen name="longda_margin_45">45dp</dimen>
+    <dimen name="longda_margin_47">47dp</dimen>
+    <dimen name="longda_margin_5">5dp</dimen>
+    <dimen name="longda_margin_50">50dp</dimen>
+    <dimen name="longda_margin_6">6dp</dimen>
+    <dimen name="longda_margin_7">7dp</dimen>
+    <dimen name="longda_margin_8">8dp</dimen>
+    <dimen name="longda_margin_9">9dp</dimen>
+    <dimen name="longda_title_h">50dp</dimen>
+    <dimen name="longda_text_size_10">10sp</dimen>
+    <dimen name="longda_text_size_12">12sp</dimen>
+    <dimen name="longda_text_size_14">14sp</dimen>
+    <dimen name="longda_text_size_15">15sp</dimen>
+    <dimen name="longda_text_size_16">16sp</dimen>
+    <dimen name="longda_text_size_17">17sp</dimen>
+    <dimen name="longda_text_size_18">18sp</dimen>
+    <dimen name="longda_text_size_20">20sp</dimen>
+    <dimen name="longda_text_size_23">23sp</dimen>
+    <dimen name="longda_title_bar_text_line_margin">1dp</dimen>
+
+
+    <string name="longda_common_alert_dialog_tip">确认放弃购买商品?</string>
+    <string name="longda_common_alert_dialog_ensure">确认</string>
+    <string name="longda_common_alert_dialog_cancel">取消</string>
+    <string name="longda_common_loading">正在加载...</string>
+    <string name="longda_sub_game_pay_finish">完成</string>
+    <string name="longda_ui_pay_hub_more_type">更多支付方式</string>
+    <string name="longda_ui_pay_hub_qq">客服QQ：</string>
+    <string name="longda_person_center_server_center">服务中心</string>
+    <string name="longda_ui_pay_hub_ensure_pay">确认支付 ¥</string>
+    <string name="longda_ui_title_bar_normal_title">光年收银台</string>
+    <string name="longda_ui_title_bar_normal_log">登录</string>
+    <string name="longda_common_alert_dialog_title">请确认支付是否已经完成</string>
+    <string name="longda_common_alert_dialog_ok">已完成支付</string>
+    <string name="longda_common_alert_dialog_no">支付遇到问题，重新支付</string>
+
+    <style name="longda_custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/longda_transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="longda_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/longda_transparent</item>
+        <item name="android:background">@color/longda_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:paddingTop">35dip</item>
+        <item name="android:paddingBottom">35dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+    </style>
+</resources>

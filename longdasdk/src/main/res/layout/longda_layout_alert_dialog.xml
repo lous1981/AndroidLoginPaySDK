@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/longda_bg">
+
+    <ImageView
+        android:layout_gravity="right"
+        android:id="@+id/longda_iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/longda_margin_10"
+        android:src="@drawable/longda_dialog_close"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/longda_margin_10"
+            android:gravity="center"
+            android:minHeight="@dimen/longda_height_95">
+
+            <TextView
+                android:id="@+id/longda_tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/longda_common_alert_dialog_tip"
+                android:textColor="@color/longda_color_value_6"
+                android:textSize="@dimen/longda_margin_15"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/longda_divid_line_h"
+            android:background="@color/longda_color_value_4_1"/>
+
+        <Button
+            android:id="@+id/longda_btn_dialog_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/longda_height_45"
+            android:background="@drawable/longda_bg"
+            android:gravity="center"
+            android:text="@string/longda_common_alert_dialog_ensure"
+            android:textColor="@color/longda_color_value_7_2"
+            android:textSize="@dimen/longda_text_size_15"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

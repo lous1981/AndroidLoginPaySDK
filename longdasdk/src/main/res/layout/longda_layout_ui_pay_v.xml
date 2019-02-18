@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/longda_color_value_1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/longda_color_value_1">
+
+        <include
+            android:id="@+id/longda_v_title_bar_alongda"
+            layout="@layout/longda_layout_ui_title_bar" />
+
+        <LinearLayout
+            android:id="@+id/longda_ll_notice_alongda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longda_v_title_bar_alongda"
+            android:background="@color/longda_color_value_2_0"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.yuan.shi.lonng.ui.widget.LongDaMarqueeTextView
+                android:id="@+id/longda_tv_notice_alongda"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/longda_margin_28"
+                android:paddingLeft="@dimen/longda_margin_10"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="qwertyuioiuytr1234565432ewwertqwertyuioiuytr1234565432ewwertqwertyuioiuytr1234565432ewwertqwertyuioiuytr1234565432ewwertqwertyuioiuytr1234565432ewwert"
+                android:textColor="@color/longda_color_value_4"
+                android:textSize="@dimen/longda_text_size_12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/longda_divid_line_h"
+                android:background="@color/longda_color_value_3" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/longda_rl_feeinfo_alongda_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longda_ll_notice_alongda"
+            android:background="@drawable/longda_common_slash_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/longda_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥ "
+                    android:textColor="@color/longda_color_value_8"
+                    android:textSize="@dimen/longda_text_size_23" />
+
+                <TextView
+                    android:id="@+id/longda_tv_price_alongda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 9.99"
+                    android:textColor="@color/longda_color_value_8"
+                    android:textSize="@dimen/longda_text_size_23" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/longda_tv_wares_name_alongda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/longda_margin_4"
+                android:layout_marginTop="@dimen/longda_margin_10"
+                android:textColor="@color/longda_color_value_5"
+                android:textSize="@dimen/longda_text_size_12" />
+
+            <TextView
+                android:id="@+id/longda_tv_wares_order_id_alongda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3234567654323"
+                android:layout_marginBottom="@dimen/longda_margin_10"
+                android:textColor="@color/longda_color_value_4"
+                android:textSize="@dimen/longda_text_size_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/longda_ll_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longda_rl_feeinfo_alongda_up"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/longda_title_bar_text_line_margin"
+                android:background="@color/longda_color_value_line_height_2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/longda_divid_line_h"
+                android:background="@color/longda_color_value_line_height_1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/longda_margin_15"
+                android:background="@color/longda_color_value_2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/longda_divid_line_h"
+                android:background="@color/longda_color_value_3" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/longda_sl_pay_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/longda_ll_line"
+            android:background="@color/longda_color_value_2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/longda_ll_pay_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/longda_ll_more_paytype"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/longda_color_value_1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/longda_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/longda_height_38"
+                        android:drawableRight="@drawable/longda_dropdown_bg"
+                        android:gravity="center"
+                        android:text="@string/longda_ui_pay_hub_more_type"
+                        android:textColor="@color/longda_color_value_5"
+                        android:textSize="@dimen/longda_text_size_12" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/longda_divid_line_h"
+                    android:background="@color/longda_color_value_3" />
+
+
+
+                <TextView
+                    android:id="@+id/longda_tv_bottom_submit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/longda_margin_10"
+                    android:layout_marginLeft="@dimen/longda_margin_10"
+                    android:layout_marginRight="@dimen/longda_margin_10"
+                    android:layout_marginTop="@dimen/longda_margin_40"
+                    android:background="@drawable/longda_common_btn_bg_color"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/longda_margin_10"
+                    android:paddingTop="@dimen/longda_margin_10"
+                    android:text="@string/longda_ui_pay_hub_ensure_pay"
+                    android:textColor="@color/longda_color_value_1"
+                    android:textSize="@dimen/longda_text_size_17"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/longda_ll_qq_center_service_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/longda_margin_10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:background="@color/longda_color_value_2"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/longda_ui_pay_hub_qq"
+                android:textColor="@color/longda_color_value_4"
+                android:textSize="@dimen/longda_text_size_12" />
+
+            <TextView
+                android:id="@+id/longda_tv_pay_hub_qq_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4000000000"
+                android:textColor="@color/longda_color_value_4"
+                android:textSize="@dimen/longda_text_size_12" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
+

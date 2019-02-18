@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/webView_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/longda_transparent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/longda_ui_title_bar"
+        layout="@layout/longda_layout_ui_title_bar" />
+
+    <WebView
+        android:id="@+id/longda_fl_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

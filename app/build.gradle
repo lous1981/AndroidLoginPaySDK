@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("GMT+:08:00"))
+}
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.yuan.shi"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        flavorDimensions "default"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    signingConfigs {
+
+        release {
+            storeFile file('D:/project/jks/201901092150.jks')
+            storePassword "luyonghong1981"
+            keyAlias "lous"
+            keyPassword "luyonghong1981"
+        }
+    }
+
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-android.txt'
+            signingConfig signingConfigs.release
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+
+            // 自定义输出配置
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    outputFileName = "longyuan_${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+                }
+            }
+        }
+    }
+
+    productFlavors {
+        gongbao {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "gongbao", APLUS_VALUE: 1000,
+                                    BFG_VALUE:"892c6e5b0a838183ecaaae96939ce840"]
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation project(':longdasdk')
+}
